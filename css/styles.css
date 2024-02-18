@@ -154,10 +154,24 @@ header {
  }
 
  .business-section {
+    
     background: #2e2f42;
    padding: 188px 0;
+   margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/people-office\ 1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
  }
 
+ .business-section-container {
+    /* background-image: url(../images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+
+ }
 
  .business-title {
     font-weight: 700;
