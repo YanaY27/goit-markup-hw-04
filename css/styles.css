@@ -386,6 +386,10 @@ background-color: #404bbf;
     background-color: #404bbf;
 }
 
+.team-link:focus {
+    background-color: #404bbf;
+}
+
 .portfolio {
   font-weight: 700;
   font-size: 36px;
