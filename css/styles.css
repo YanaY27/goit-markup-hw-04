@@ -100,9 +100,9 @@ header {
 }
 
 .current {
+    
+ color:#404bbf;
 
-            color: #404bbf;
-        
 }
 
 .header-link.current::after {
@@ -174,7 +174,7 @@ header {
   padding: 188px 0;
   margin: 0 auto;
   background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-    url("../images/people-office\ 1.jpg");
+    url("../images/img-name.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -382,7 +382,8 @@ align-items: center;
 background-color: #404bbf;
 }
 
-.team-item-icon:focus .team-link {
+.team-item-icon:focus .team-link,
+.team-item-icon:active .team-link {
     background-color: #404bbf;
 }
 
@@ -540,7 +541,6 @@ padding: 40px 32px;
 .social-media-footer-item {
     width: 40px;
     height: 40px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-footer {
@@ -553,6 +553,7 @@ padding: 40px 32px;
     line-height: 100px;
     padding: 8px;
     background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-footer-list .social-links-footer:hover,
