@@ -163,12 +163,12 @@ header {
   color: #404bbf;
 }
 
-.address .contacts:focus {
+.address .contacts:focus,
+.address .contacts:active {
   color: #404bbf;
 }
 
 .business-section {
-  background: #2e2f42;
   padding: 188px 0;
   margin: 0 auto;
   background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
@@ -177,6 +177,7 @@ header {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+    background-color: #2e2f42;
 }
 
 .business-title {
@@ -401,6 +402,12 @@ background-color: #404bbf;
   row-gap: 48px;
 }
 
+.portfolio-list .hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-item {
   background: #fff;
   width: calc((100% - 48px) / 3);
@@ -408,11 +415,6 @@ background-color: #404bbf;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item .hover {
-    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 .item-overlay-container {
   position: relative;
@@ -428,7 +430,7 @@ padding: 40px 32px;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -441,6 +443,7 @@ padding: 40px 32px;
   transform: translateY(0);
   transition-property: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: 250ms;
+  
 }
 
 .portfolio-wrapper {
@@ -535,6 +538,7 @@ padding: 40px 32px;
 .social-media-footer-item {
     width: 40px;
     height: 40px;
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-footer {
