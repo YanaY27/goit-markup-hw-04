@@ -99,8 +99,10 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link-current{
- color:#404bbf;
+.current {
+
+            color: #404bbf;
+        
 }
 
 .header-link.current::after {
@@ -165,7 +167,7 @@ header {
 
 .address .contacts:focus,
 .address .contacts:active {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 
 .business-section {
@@ -402,11 +404,6 @@ background-color: #404bbf;
   row-gap: 48px;
 }
 
-.portfolio-list .hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 .portfolio-item {
   background: #fff;
@@ -415,6 +412,11 @@ background-color: #404bbf;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-list:hover .portfolio-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .item-overlay-container {
   position: relative;
@@ -538,7 +540,7 @@ padding: 40px 32px;
 .social-media-footer-item {
     width: 40px;
     height: 40px;
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-footer {
