@@ -385,9 +385,6 @@ background-color: #404bbf;
 .team-item-icon:focus .team-link {
     background-color: #404bbf;
 }
-.team-item-icon:active .team-link {
-    background-color: #404bbf;
-}
 
 .portfolio {
   font-weight: 700;
